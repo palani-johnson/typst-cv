@@ -11,7 +11,6 @@
 
     flake-utils.url = "github:numtide/flake-utils";
 
-    # Example of downloading icons from a non-flake source
     # font-awesome = {
     #   url = "github:FortAwesome/Font-Awesome";
     #   flake = false;
@@ -31,8 +30,9 @@
       typixLib = typix.lib.${system};
 
       src = typixLib.cleanTypstSource ./.;
+
       commonArgs = {
-        typstSource = "main.typ";
+        typstSource = "./src/cv.typ";
 
         fontPaths = [
           # Add paths to fonts here
@@ -42,7 +42,7 @@
         virtualPaths = [
           # Add paths that must be locally accessible to typst here
           # {
-          #   dest = "icons";
+          #   dest = ".icons";
           #   src = "${inputs.font-awesome}/svgs/regular";
           # }
         ];
@@ -83,12 +83,12 @@
 
       devShells.default = typixLib.devShell {
         inherit (commonArgs) fontPaths virtualPaths;
+        name = "resume";
         packages = [
           # WARNING: Don't run `typst-build` directly, instead use `nix run .#build`
           # See https://github.com/loqusion/typix/issues/2
           # build-script
           watch-script
-          # More packages can be added here, like typstfmt
           pkgs.typstfmt
         ];
       };
