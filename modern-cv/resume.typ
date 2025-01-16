@@ -2,18 +2,16 @@
 
 #show: resume.with(
   author: (
-    firstname: "John",
-    lastname: "Smith",
-    email: "js@example.com",
-    homepage: "https://example.com",
-    phone: "(+1) 111-111-1111",
-    github: "DeveloperPaul123",
-    twitter: "typstapp",
-    scholar: "",
-    orcid: "0000-0000-0000-000X",
-    birth: "January 1, 1990",
-    linkedin: "Example",
-    address: "111 Example St. Example City, EX 11111",
+    firstname: "Palani",
+    lastname: "Johnson",
+    email: "palanijohnson@gmail.com",
+    // homepage: "https://example.com",
+
+    phone: "702-279-0982",
+    github: "palani-johnson",
+    linkedin: "palani-johnson",
+
+    address: "1326 e 900 s, Salt Lake City, UT 84105",
     positions: (
       "Software Engineer",
       "Software Architect",

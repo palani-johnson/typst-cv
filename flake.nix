@@ -19,17 +19,20 @@
       in {
         devShells.default = pkgs.mkShell {
           name = "typst-cv";
+
           packages = with pkgs; [
-            # Typst
             typst
             typstfmt
-
-            # Fonts
-            roboto
-            source-sans
-            source-sans-pro
-            font-awesome
           ];
+
+          env = {
+            TYPST_FONT_PATHS = pkgs.lib.concatStringsSep ":" [
+              "${pkgs.roboto}/share/fonts/truetype"
+              "${pkgs.source-sans}/share/fonts/truetype"
+              "${pkgs.source-sans-pro}/share/fonts/truetype"
+              "${pkgs.font-awesome}/share/fonts/opentype"
+            ];
+          };
         };
       }
     );
