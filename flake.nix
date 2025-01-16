@@ -22,16 +22,16 @@
 
           packages = with pkgs; [
             typst
-            typstfmt
+            typstyle
           ];
 
           env = {
-            TYPST_FONT_PATHS = pkgs.lib.concatStringsSep ":" [
-              "${pkgs.roboto}/share/fonts/truetype"
-              "${pkgs.source-sans}/share/fonts/truetype"
-              "${pkgs.source-sans-pro}/share/fonts/truetype"
-              "${pkgs.font-awesome}/share/fonts/opentype"
-            ];
+            TYPST_FONT_PATHS = pkgs.lib.concatStringsSep ":" (with pkgs; [
+              roboto
+              source-sans
+              source-sans-pro
+              font-awesome
+            ]);
           };
         };
       }

@@ -1,23 +1,8 @@
 #import "@preview/modern-cv:0.7.0": *
+#import "info.typ": author
 
 #show: resume.with(
-  author: (
-    firstname: "Palani",
-    lastname: "Johnson",
-    email: "palanijohnson@gmail.com",
-    // homepage: "https://example.com",
-
-    phone: "702-279-0982",
-    github: "palani-johnson",
-    linkedin: "palani-johnson",
-
-    address: "1326 e 900 s, Salt Lake City, UT 84105",
-    positions: (
-      "Software Engineer",
-      "Software Architect",
-      "Developer",
-    ),
-  ),
+  author: author,
   date: datetime.today().display(),
   language: "en",
   colored-headers: true,
@@ -27,91 +12,73 @@
 = Experience
 
 #resume-entry(
-  title: "Senior Software Engineer",
-  location: "Example City, EX",
-  date: "2019 - Present",
-  description: "Example, Inc.",
-  title-link: "https://github.com/DeveloperPaul123",
+  title: "Software Developer",
+  location: "Remote",
+  date: "Apr 2023 - Current",
+  description: "Fortune Brands Innovations",
+  title-link: "https://www.fbin.com/",
 )
 
 #resume-item[
-  - #lorem(20)
-  - #lorem(15)
-  - #lorem(25)
+  - *Copilot Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging
+    Azure Copilot Studio and AI Foundry.
+  - *Faucet ID:* Designed and implemented a backend system, API, and management frontend using FastAPI for Moen's "Faucet
+    ID," an image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture,
+    streamline server operations, and migrate processes to Azure Kubernetes Service.
+  - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (FPG), focusing on a serverless C\# Azure Function for
+    automated Excel report generation.
 ]
 
 #resume-entry(
-  title: "Software Engineer",
-  location: "Example City, EX",
-  date: "2011 - 2019",
-  description: "Previous Company, Inc.",
+  title: "Application Analyst",
+  location: "Remote",
+  date: "Apr 2022 - Apr 2023",
+  description: "Moen Faucets",
+  title-link: "https://www.moen.com/",
 )
 
 #resume-item[
-  // content doesn't have to be bullet points
-  #lorem(72)
+  - *Google Voice:* Developed and maintained Moen's Google Voice skill for connected products using TypeScript and Node.js
+    on AWS Lambda.
+  - *Smart Faucet:* Maintained a legacy Heroku-hosted voice fulfillment endpoint written in Ruby.
 ]
 
 #resume-entry(
-  title: "Intern",
-  location: "Example City, EX",
+  title: "Full Stack Developer",
+  description: "USU IT",
+  location: "Logan, UT",
+  date: "May 2021 - Apr 2022",
+  title-link: "https://it.usu.edu/",
 )
 
 #resume-item[
-  - #lorem(20)
-  - #lorem(15)
-  - #lorem(25)
+  - Collaborated with student programmers to develop and implement web applications for the USU IT department using various
+    technologies.
+  - Created a network troubleshooting tool with Flask, jQuery, and MongoDB to perform network tests and assist the USU
+    service desk in diagnosing connectivity issues.
+  - Refactored an internal switch management tool built with Django, Celery, jQuery, and PostgreSQL by modernizing the
+    frontend with React and replacing the Celery task queue with Huey and Redis.
 ]
-
-= Projects
-
-#resume-entry(
-  title: "Thread Pool C++ Library",
-  location: [#github-link("DeveloperPaul123/thread-pool")],
-  date: "May 2021 - Present",
-  description: "Designer/Developer",
-)
-
-#resume-item[
-  - Designed and implemented a thread pool library in C++ using the latest C++20 and C++23 features.
-  - Wrote extensive documentation and unit tests for the library and published it on Github.
-]
-
-#resume-entry(
-  title: "Event Bus C++ Library",
-  location: github-link("DeveloperPaul123/eventbus"),
-  date: "Sep. 2019 - Present",
-  description: "Designer/Developer",
-)
-
-#resume-item[
-  - Designed and implemented an event bus library using C++17.
-  - Wrote detailed documentation and unit tests for the library and published it on Github.
-]
-
-= Skills
-
-#resume-skill-item(
-  "Languages",
-  (strong("C++"), strong("Python"), "Java", "C#", "JavaScript", "TypeScript"),
-)
-#resume-skill-item("Spoken Languages", (strong("English"), "Spanish"))
-#resume-skill-item(
-  "Programs",
-  (strong("Excel"), "Word", "Powerpoint", "Visual Studio"),
-)
 
 = Education
 
 #resume-entry(
-  title: "Example University",
-  location: "Example City, EX",
-  date: "August 2014 - May 2019",
-  description: "B.S. in Computer Science",
+  title: "B.S. Computer Science",
+  location: "Utah State University",
+  date: "2016 - 2021",
+  description: "Mathematics Minor",
 )
 
 #resume-item[
-  - #lorem(20)
-  - #lorem(15)
-  - #lorem(25)
+  - Dean's list: Fall 2020, Spring 2021
 ]
+
+= Skills
+
+#resume-skill-item("Languages", (strong("Python"), "TypeScript", "SQL", "C/C++", "Rust"))
+#resume-skill-item(
+  "Backend",
+  (strong("FastAPI"), "Django", "Flask", "Node.js", "MongoDB", "PostgreSQL", "MySQL", ".NET"),
+)
+
+#resume-skill-item("Programs", (strong("Excel"), "Word", "Powerpoint", "Visual Studio"))
