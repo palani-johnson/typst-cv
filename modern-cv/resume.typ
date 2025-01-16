@@ -1,5 +1,5 @@
 #import "@preview/modern-cv:0.7.0": *
-#import "info.typ": author
+#import "info.typ": *
 
 #show: resume.with(
   author: author,
@@ -13,27 +13,29 @@
 
 #resume-entry(
   title: "Software Developer",
-  location: "Remote",
+  location: if show-location [Remote] else [],
   date: "Apr 2023 - Current",
-  description: "Fortune Brands Innovations (parent of Moen)",
+  description: [Fortune Brands Innovations (parent of Moen)],
   title-link: "https://www.fbin.com/",
 )
 
 #resume-item[
-  - *Copilot Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging Azure Copilot Studio and AI Foundry.
+  As a member of the FBIN's Emergent Technologies team and AI/ML team:
+  - *Copilot Chat Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging Azure Copilot Studio and AI Foundry.
   - *Faucet ID:* Designed and implemented a backend system, API, and management frontend using FastAPI for Moen's _Faucet ID_, an image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture, streamline server operations, and migrate processes to Azure Kubernetes Service.
   - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (_FPG_), focusing on a serverless C\# Azure Function for automated Excel report generation.
 ]
 
 #resume-entry(
   title: "Application Analyst",
-  location: "Remote",
+  location: if show-location [Remote] else [],
   date: "Apr 2022 - Apr 2023",
-  description: "Moen Faucets",
+  description: [Moen Faucets],
   title-link: "https://www.moen.com/",
 )
 
 #resume-item[
+  As a member of the Moen Faucets' IoT Voice and Connected Products team:
   - *Google Voice:* Developed and maintained Moen's Google Voice skill for connected products using TypeScript and Node.js on AWS Lambda.
   - *Smart Faucet:* Maintained a legacy Heroku-hosted voice fulfillment endpoint written in Ruby.
 ]
@@ -41,7 +43,7 @@
 #resume-entry(
   title: "Full Stack Developer",
   description: "USU IT",
-  location: "Logan, UT",
+  location: if show-location [Logan, UT] else [],
   date: "May 2021 - Apr 2022",
   title-link: "https://it.usu.edu/",
 )

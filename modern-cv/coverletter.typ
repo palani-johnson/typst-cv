@@ -1,5 +1,5 @@
 #import "@preview/modern-cv:0.7.0": *
-#import "info.typ": author
+#import "info.typ": *
 
 #show: coverletter.with(
   author: author,
