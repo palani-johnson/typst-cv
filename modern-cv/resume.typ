@@ -75,10 +75,33 @@
 
 = Skills
 
-#resume-skill-item("Languages", (strong("Python"), "TypeScript", "SQL", "C/C++", "Rust"))
+#resume-skill-item(
+  "Languages",
+  (strong("Python"), strong("TypeScript"), "SQL", "C/C++", "Rust"),
+)
+
 #resume-skill-item(
   "Backend",
   (strong("FastAPI"), "Django", "Flask", "Node.js", "MongoDB", "PostgreSQL", "MySQL", ".NET"),
 )
 
-#resume-skill-item("Programs", (strong("Excel"), "Word", "Powerpoint", "Visual Studio"))
+#resume-skill-item(
+  "Frontend",
+  (strong("React"), strong("HTMX"), "jQuery"),
+)
+
+#resume-skill-item(
+  "Data Science",
+  ("NumPy", "TensorFlow", "TFLearn", "Keras", "Cuda", "OpenM"),
+)
+
+#resume-skill-item(
+  "Other",
+  ("Linux", "Git", "Azure", "AWS", "Docker", "K8s", "Nix"),
+)
+
+= About Me
+
+#coverletter-content[
+  I'm a Software Developer passionate about solving complex problems with elegant, efficient solutions. I have a proven track record of creating lasting solutions in whatever software stack you can throw at me. I love learning new software tools and programming languages. From infrastructure to frontend, I have experience in the entire software stack. I'm a quick learner who strives to write software the right way.
+]
