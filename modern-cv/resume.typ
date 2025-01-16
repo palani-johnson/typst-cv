@@ -15,18 +15,14 @@
   title: "Software Developer",
   location: "Remote",
   date: "Apr 2023 - Current",
-  description: "Fortune Brands Innovations",
+  description: "Fortune Brands Innovations (parent of Moen)",
   title-link: "https://www.fbin.com/",
 )
 
 #resume-item[
-  - *Copilot Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging
-    Azure Copilot Studio and AI Foundry.
-  - *Faucet ID:* Designed and implemented a backend system, API, and management frontend using FastAPI for Moen's "Faucet
-    ID," an image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture,
-    streamline server operations, and migrate processes to Azure Kubernetes Service.
-  - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (FPG), focusing on a serverless C\# Azure Function for
-    automated Excel report generation.
+  - *Copilot Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging Azure Copilot Studio and AI Foundry.
+  - *Faucet ID:* Designed and implemented a backend system, API, and management frontend using FastAPI for Moen's _Faucet ID_, an image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture, streamline server operations, and migrate processes to Azure Kubernetes Service.
+  - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (_FPG_), focusing on a serverless C\# Azure Function for automated Excel report generation.
 ]
 
 #resume-entry(
@@ -38,8 +34,7 @@
 )
 
 #resume-item[
-  - *Google Voice:* Developed and maintained Moen's Google Voice skill for connected products using TypeScript and Node.js
-    on AWS Lambda.
+  - *Google Voice:* Developed and maintained Moen's Google Voice skill for connected products using TypeScript and Node.js on AWS Lambda.
   - *Smart Faucet:* Maintained a legacy Heroku-hosted voice fulfillment endpoint written in Ruby.
 ]
 
@@ -52,12 +47,9 @@
 )
 
 #resume-item[
-  - Collaborated with student programmers to develop and implement web applications for the USU IT department using various
-    technologies.
-  - Created a network troubleshooting tool with Flask, jQuery, and MongoDB to perform network tests and assist the USU
-    service desk in diagnosing connectivity issues.
-  - Refactored an internal switch management tool built with Django, Celery, jQuery, and PostgreSQL by modernizing the
-    frontend with React and replacing the Celery task queue with Huey and Redis.
+  - Collaborated with student programmers to develop and implement web applications for the USU IT department using various technologies.
+  - Created a network troubleshooting tool with Flask, jQuery, and MongoDB to perform network tests and assist the USU service desk in diagnosing connectivity issues.
+  - Refactored an internal switch management tool built with Django, Celery, jQuery, and PostgreSQL by modernizing the frontend with React and replacing the Celery task queue with Huey and Redis.
 ]
 
 = Education
