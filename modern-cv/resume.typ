@@ -92,7 +92,7 @@
 
 #resume-skill-item(
   "Data Science",
-  ("NumPy", "TensorFlow", "TFLearn", "Keras", "Cuda", "OpenM"),
+  ("NumPy", "TensorFlow", "TFLearn", "Keras", "Cuda", "OpenMP"),
 )
 
 #resume-skill-item(
