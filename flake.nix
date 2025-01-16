@@ -10,11 +10,6 @@
     };
 
     flake-utils.url = "github:numtide/flake-utils";
-
-    # font-awesome = {
-    #   url = "github:FortAwesome/Font-Awesome";
-    #   flake = false;
-    # };
   };
 
   outputs = inputs @ {
@@ -29,22 +24,17 @@
 
       typixLib = typix.lib.${system};
 
-      src = typixLib.cleanTypstSource ./.;
+      src = typixLib.cleanTypstSource ./modern-cv;
 
       commonArgs = {
-        typstSource = "./src/cv.typ";
+        typstSource = "./modern-cv/resume.typ";
+        typstOutput = "./out/resume.pdf";
 
         fontPaths = [
-          # Add paths to fonts here
-          # "${pkgs.roboto}/share/fonts/truetype"
-        ];
-
-        virtualPaths = [
-          # Add paths that must be locally accessible to typst here
-          # {
-          #   dest = ".icons";
-          #   src = "${inputs.font-awesome}/svgs/regular";
-          # }
+          pkgs.roboto
+          pkgs.source-sans
+          pkgs.source-sans-pro
+          pkgs.font-awesome
         ];
       };
 
@@ -82,7 +72,8 @@
       };
 
       devShells.default = typixLib.devShell {
-        inherit (commonArgs) fontPaths virtualPaths;
+        inherit (commonArgs) fontPaths;
+
         name = "resume";
         packages = [
           # WARNING: Don't run `typst-build` directly, instead use `nix run .#build`
