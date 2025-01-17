@@ -8,7 +8,14 @@
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [];
 
-      perSystem = {pkgs, ...}: {
+      perSystem = {pkgs, ...}: let
+        fonts = with pkgs; [
+          roboto
+          source-sans
+          source-sans-pro
+          font-awesome
+        ];
+      in {
         devShells.default = pkgs.mkShell {
           name = "typst-cv";
 
@@ -18,12 +25,7 @@
           ];
 
           env = {
-            TYPST_FONT_PATHS = pkgs.lib.concatStringsSep ":" (with pkgs; [
-              roboto
-              source-sans
-              source-sans-pro
-              font-awesome
-            ]);
+            TYPST_FONT_PATHS = pkgs.lib.concatStringsSep ":" fonts;
           };
         };
       };
