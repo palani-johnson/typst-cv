@@ -3,6 +3,6 @@
     "editor.formatOnSave": true
   },
   "tinymist.formatterMode": "typstyle",
-  "tinymist.outputPath": "$root/.output/$name",
+  "tinymist.outputPath": "$root/output/$name",
   "tinymist.formatterPrintWidth": 100
 }
