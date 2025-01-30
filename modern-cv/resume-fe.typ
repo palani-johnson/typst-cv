@@ -20,9 +20,9 @@
 )
 
 #resume-item[
-  As a member of the FBIN's Emergent Technologies team and AI/ML team:
-  - *Copilot Chat Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging Azure Copilot Studio and AI Foundry.
+  As a member of the FBIN's Emergent Technologies (skunkworks) team and AI/ML team:
   - *Faucet ID:* Designed and implemented a backend system, API, and management frontend using FastAPI for Moen's _Faucet ID_, an image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture, streamline server operations, and migrate processes to Azure Kubernetes Service.
+  - *Neighborhood:* built integrations from Fortunes Brands' _Neighborhood_ web component library for Next.js and React applications.
   - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (_FPG_), focusing on a serverless C\# Azure Function for automated Excel report generation.
 ]
 
