@@ -19,11 +19,26 @@
   title-link: "https://www.fbin.com/",
 )
 
+#let fbin-items = (
+  copilot-chat-agents: [
+    - *Copilot Chat Agents:* Configured Microsoft Copilot LLM Agents for internal use by the consumer support team, leveraging Azure Copilot Studio, AI Foundry, and LangChain.
+  ],
+  faucet-id: [
+    - *Faucet ID:* Designed and implemented a backend system, API, management frontend, and training pipeline for Moen's _Faucet ID_ image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture, streamline server operations, and migrate processes to Azure Kubernetes Service. Key components include FastAPI for the Rest APIs, HTMX for frontend reactivity, Keras/Tensorflow for training, and Onnx for model inference.
+  ],
+  neighborhood: [
+    - *Neighborhood:* built integrations from Fortunes Brands' _Neighborhood_ web component library for Next.js and React applications
+  ],
+  fpg: [
+    - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (_FPG_), focusing on a serverless C\# Azure Function for automated Excel report generation.
+  ],
+)
+
 #resume-item[
   As a member of the FBIN's Emergent Technologies (skunkworks) team and AI/ML team:
-  - *Faucet ID:* Designed and implemented a backend system, API, and management frontend using FastAPI for Moen's _Faucet ID_, an image recognition model. Collaborated with a Lead Business Consultant to optimize database architecture, streamline server operations, and migrate processes to Azure Kubernetes Service.
-  - *Neighborhood:* built integrations from Fortunes Brands' _Neighborhood_ web component library for Next.js and React applications.
-  - *FPG:* Maintained and enhanced Therma-Tru's pricebook generator (_FPG_), focusing on a serverless C\# Azure Function for automated Excel report generation.
+  #fbin-items.copilot-chat-agents
+  #fbin-items.faucet-id
+  #fbin-items.neighborhood
 ]
 
 #resume-entry(
@@ -69,30 +84,69 @@
 
 = Skills
 
-#resume-skill-item(
-  "Languages",
-  (strong("Python"), strong("TypeScript"), "SQL", "C/C++", "Rust"),
+#let skill-set = (
+  fullstack: [
+    #resume-skill-item(
+      "Languages",
+      (strong("Python"), strong("TypeScript"), "SQL", "C/C++", "Rust"),
+    )
+
+    #resume-skill-item(
+      "Backend",
+      (strong("FastAPI"), "Django", "Flask", "Node.js", "MongoDB", "PostgreSQL", "MySQL", ".NET"),
+    )
+
+    #resume-skill-item(
+      "Frontend",
+      (strong("React"), strong("HTMX"), "jQuery"),
+    )
+
+    #resume-skill-item(
+      "Data Science",
+      ("Keras", "NumPy", "TensorFlow", "Cuda", "OpenMP"),
+    )
+
+    #resume-skill-item(
+      "Other",
+      ("Linux", "Git", "Azure", "AWS", "Docker", "K8s", "Nix"),
+    )
+  ],
+  ml: [
+    #resume-skill-item(
+      "Languages",
+      (strong("Python"), strong("TypeScript"), "SQL", "C/C++", "Rust"),
+    )
+
+    #resume-skill-item(
+      "Backend",
+      (strong("FastAPI"), "Django", "Flask", "Node.js", "MongoDB", "PostgreSQL", "MySQL", ".NET"),
+    )
+
+    #resume-skill-item(
+      "Frontend",
+      (strong("React"), strong("HTMX"), "jQuery"),
+    )
+
+    #resume-skill-item(
+      "AI/ML",
+      (
+        strong("Keras"),
+        strong("LangChain"),
+        "NumPy",
+        "TensorFlow",
+        "Cuda",
+        "OpenMP",
+      ),
+    )
+
+    #resume-skill-item(
+      "Other",
+      ("Linux", "Git", "Azure", "AWS", "Docker", "K8s", "Nix"),
+    )
+  ],
 )
 
-#resume-skill-item(
-  "Backend",
-  (strong("FastAPI"), "Django", "Flask", "Node.js", "MongoDB", "PostgreSQL", "MySQL", ".NET"),
-)
-
-#resume-skill-item(
-  "Frontend",
-  (strong("React"), strong("HTMX"), "jQuery"),
-)
-
-#resume-skill-item(
-  "Data Science",
-  ("NumPy", "TensorFlow", "TFLearn", "Keras", "Cuda", "OpenMP"),
-)
-
-#resume-skill-item(
-  "Other",
-  ("Linux", "Git", "Azure", "AWS", "Docker", "K8s", "Nix"),
-)
+#skill-set.ml
 
 = About Me
 
